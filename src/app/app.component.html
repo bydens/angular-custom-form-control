@@ -1,0 +1,9 @@
+<form [formGroup]="myForm">
+  <input type="text" formControlName="groupName" />
+  <my-custom-control
+    formControlName="permissionList"
+    [typeView]="permissionView"
+    [typeEdit]="permissionEdit"
+  ></my-custom-control>
+</form>
+<button (click)="sendForm()">submit</button>
